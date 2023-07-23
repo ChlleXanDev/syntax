@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("../img/back.jpg") center/cover no-repeat;
+    backdrop-filter: blur(8px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.267); /* Add transparency to the table background */
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.267); /* Add transparency to the table cells */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(242, 242, 242, 0.267); /* Add transparency to even rows */
+    color: black;
+}
+
+th {
+    background-color: rgba(51, 51, 51, 0.8); /* Add transparency to the header background */
+    color: #fff;
+}
+
+/* Media Query for responsive design */
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+select {
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 4px 12px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
